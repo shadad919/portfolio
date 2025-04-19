@@ -18,6 +18,37 @@ window.onclick = function (event) {
     modal.style.display = 'none';
   }
 };
+const contactButn = document.getElementById("contactBtn");
+const ContactImg = document.getElementById("contactIcon");
+
+contactButn.addEventListener("mouseenter", () => {
+    ContactImg.src = "css/call-yellow.png";
+});
+
+contactButn.addEventListener("mouseleave", () => {
+    ContactImg.src = "css/call-dark.png";
+});
+const githubBtn = document.getElementById("github");
+const githubImage = document.getElementById("githubImg");
+
+githubBtn.addEventListener("mouseenter", () => {
+    githubImage.src = "css/github-yellow.png";
+});
+
+githubBtn.addEventListener("mouseleave", () => {
+    githubImage.src = "css/github-dark.png";
+});
+
+const npmBtn = document.getElementById("npm");
+const npmImage = document.getElementById("npmImg");
+
+npmBtn.addEventListener("mouseenter", () => {
+    npmImage.src = "css/npm-yellow.png";
+});
+
+npmBtn.addEventListener("mouseleave", () => {
+    npmImage.src = "css/npm-dark.png";
+});
 
 document.querySelector('form').addEventListener('submit', function (e) {
     e.preventDefault();
